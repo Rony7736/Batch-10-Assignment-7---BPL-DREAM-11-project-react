@@ -4,6 +4,7 @@ import './App.css'
 import Available from './components/Available/Available'
 import Banner from './components/Banner/Banner'
 import Navbar from './components/Navbar/Navbar'
+import Footer from './components/Footer/Footer'
 
 function App() {
 
@@ -38,6 +39,10 @@ function App() {
 
       <div>
         <Available isActive={isActive} handleIsActiveState={handleIsActiveState}></Available>
+      </div>
+
+      <div>
+        <Footer></Footer>
       </div>
 
     </div>

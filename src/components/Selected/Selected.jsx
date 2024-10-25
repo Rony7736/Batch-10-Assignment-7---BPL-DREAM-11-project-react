@@ -2,10 +2,10 @@
 
 const Selected = () => {
 
-    
+
     return (
         <div>
-            <h2>Selected</h2>
+            <h2>Selected Player </h2>
         </div>
     );
 };
