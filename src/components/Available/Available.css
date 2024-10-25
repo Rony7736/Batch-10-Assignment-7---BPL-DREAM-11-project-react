@@ -1,0 +1,14 @@
+
+.active{
+    background-color: #E7FE29;
+    font-weight: 600;
+    border: none;
+}
+
+.btn{
+    border: 1px solid #E7E7E7;
+    padding-top:12px;
+    padding-bottom: 12px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
