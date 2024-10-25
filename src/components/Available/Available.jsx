@@ -4,8 +4,6 @@ import Selected from '../Selected/Selected';
 import './Available.css'
 
 const Available = ({handleIsActiveState, isActive}) => {
-
-    console.log(isActive);
     
     return (
         <div className="mt-12">
@@ -19,7 +17,9 @@ const Available = ({handleIsActiveState, isActive}) => {
 
             {
                 isActive.available ? <AvailableCart></AvailableCart> : <Selected></Selected>
-            }           
+            }
+            
+
 
         </div>
 
