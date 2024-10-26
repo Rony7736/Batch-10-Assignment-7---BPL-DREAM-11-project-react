@@ -24,7 +24,7 @@ function App() {
   const newPrice = (pr) => {
     const newPrice = price + pr
     setPrice(newPrice)
-    toast.success("Claim Free Credit add successfully",
+    toast.success("Claim Free Credit 100000 add successfully",
       {
         position:"top-center"
       }
@@ -62,9 +62,8 @@ function App() {
     else {
       const newPlayers = [...selectedPlayers, player]
       setSelectedPlayers(newPlayers);
-      // setPrice(price > player.price ? price - player.price : alert('Not available Balance'));
       setPrice(price - player.price);
-      toast.success("Player Selected Successfully",
+      toast.success(`Added Successfully ${player.author}`,
         {
           position:"top-center"
         }

@@ -13,7 +13,7 @@ const Banner = ({newPrice}) => {
                 <h4 className='text-[#B9B9B9] text-2xl mb-6'>Beyond Boundaries Beyond Limits</h4>
 
                 <div>
-                <button onClick={()=> newPrice(600000)} className=' border-2 border-[#CCE027] py-5 px-2 rounded-3xl'>
+                <button onClick={()=> newPrice(100000)} className=' border-2 border-[#CCE027] py-5 px-2 rounded-3xl'>
                     <span className='bg-gradient-to-b from-[#CCE027] to-[#E3FA28] py-4 px-8 rounded-3xl font-bold text-lg'>Claim Free Credit</span>
                 </button>
                 </div>
