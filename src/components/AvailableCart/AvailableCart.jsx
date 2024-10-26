@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import AvailablePlayer from "../AvailablePlayer/AvailablePlayer";
 
-const AvailableCart = () => {
+const AvailableCart = ({handleSelectedPlayers}) => {
 
     const [availableCart, setAvailableCart] = useState([])
 
@@ -19,10 +19,7 @@ const AvailableCart = () => {
         <div className="grid grid-cols-3 my-10">
             
             {
-                availableCart.map(player => <AvailablePlayer 
-                    key={availableCart.id} 
-                    player={player}
-                ></AvailablePlayer>)
+                availableCart.map(player => <AvailablePlayer  handleSelectedPlayers={handleSelectedPlayers} key={availableCart.id} player={player}></AvailablePlayer>)
             }
         </div>
     );
