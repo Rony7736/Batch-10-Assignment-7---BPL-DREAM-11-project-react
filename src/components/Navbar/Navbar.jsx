@@ -1,7 +1,7 @@
 import profile from '../../assets/img/logo.png'
 import coin from '../../assets/img/coin.png'
 
-const Navbar = () => {
+const Navbar = ({price}) => {
     return (
         <div>
             <header className='flex justify-between items-center mt-6'>
@@ -15,7 +15,7 @@ const Navbar = () => {
                         <li><a href="">Schedules</a></li>
                     </ul>
 
-                    <button className='btn flex gap-2 items-center border px-6 py-3 font-bold rounded-lg'>0 Coin <span><img src={coin} alt="" /></span> </button>
+                    <button className='btn flex gap-2 items-center border px-6 py-3 font-bold rounded-lg'>${price} Coin <span><img src={coin} alt="" /></span> </button>
                 </div>
 
             </header>

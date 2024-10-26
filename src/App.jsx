@@ -14,10 +14,18 @@ function App() {
     status: 'available'
   })
 
-  const [selectedPlayers, setSelectedPlayers] = useState([
+  const [selectedPlayers, setSelectedPlayers] = useState([])
 
+  const [price, setPrice] = useState(0)
+  // console.log(price);
 
-  ])
+  const newPrice = (pr) => {
+    console.log(pr);
+    
+    const newPrice = price + pr
+    setPrice(newPrice)
+  }
+  
 
   const handleDelete = (id) => {
     const remainingPlayers = selectedPlayers.filter((p) => p.id != id)
@@ -25,6 +33,12 @@ function App() {
   }
 
   const handleSelectedPlayers = (player) => {
+
+    if(selectedPlayers.length >= 6){
+      alert('player is full')
+      return;
+    }
+    
 
     // find loop of selectedPlayers
     const isExist = selectedPlayers.find((p) => p.id == player.id)
@@ -39,8 +53,6 @@ function App() {
     }
 
   }
-
-
 
   const handleIsActiveState = (status) => {
 
@@ -60,15 +72,16 @@ function App() {
 
   return (
     <div className='max-w-7xl mx-auto'>
-      <Navbar></Navbar>
+      <Navbar price={price}></Navbar>
 
       <div className='mt-8'>
-        <Banner></Banner>
+        <Banner newPrice={newPrice}></Banner>
       </div>
 
       <div>
 
         <Available
+          setIsActive={setIsActive}
           handleDelete={handleDelete}
           handleSelectedPlayers={handleSelectedPlayers}
           selectedPlayers={selectedPlayers}

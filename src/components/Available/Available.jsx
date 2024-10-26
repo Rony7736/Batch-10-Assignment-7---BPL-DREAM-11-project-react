@@ -3,7 +3,7 @@ import AvailableCart from '../AvailableCart/AvailableCart';
 import Selected from '../Selected/Selected';
 import './Available.css'
 
-const Available = ({handleIsActiveState, isActive, handleSelectedPlayers, selectedPlayers, handleDelete}) => {
+const Available = ({handleIsActiveState, isActive, handleSelectedPlayers, selectedPlayers, handleDelete, setIsActive}) => {
     
     return (
         <div className="mt-12">
@@ -16,7 +16,7 @@ const Available = ({handleIsActiveState, isActive, handleSelectedPlayers, select
             </div>
 
             {
-                isActive.available ? <AvailableCart handleDelete={handleDelete} handleSelectedPlayers={handleSelectedPlayers}></AvailableCart> : <Selected handleDelete={handleDelete} selectedPlayers={selectedPlayers}></Selected>
+                isActive.available ? <AvailableCart handleDelete={handleDelete} handleSelectedPlayers={handleSelectedPlayers}></AvailableCart> : <Selected handleDelete={handleDelete} selectedPlayers={selectedPlayers} setIsActive={setIsActive}></Selected>
             }
             
 

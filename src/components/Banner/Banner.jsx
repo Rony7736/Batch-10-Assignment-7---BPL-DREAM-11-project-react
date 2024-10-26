@@ -1,7 +1,7 @@
 import bannerImg from '../../assets/img/bg-shadow.png'
 import bannerContentImg from '../../assets/img/banner-main.png'
 
-const Banner = () => {
+const Banner = ({newPrice}) => {
     return (
         <div className='flex justify-center text-center w-full h-[600px]'>
 
@@ -13,8 +13,8 @@ const Banner = () => {
                 <h4 className='text-[#B9B9B9] text-2xl mb-6'>Beyond Boundaries Beyond Limits</h4>
 
                 <div>
-                <button className=' border-2 border-[#CCE027] py-5 px-2 rounded-3xl'>
-                    <a className='bg-gradient-to-b from-[#CCE027] to-[#E3FA28] py-4 px-8 rounded-3xl font-bold text-lg' href="">Claim Free Credit</a>
+                <button onClick={()=> newPrice(600000)} className=' border-2 border-[#CCE027] py-5 px-2 rounded-3xl'>
+                    <span className='bg-gradient-to-b from-[#CCE027] to-[#E3FA28] py-4 px-8 rounded-3xl font-bold text-lg'>Claim Free Credit</span>
                 </button>
                 </div>
 

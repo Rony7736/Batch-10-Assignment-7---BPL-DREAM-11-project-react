@@ -3,7 +3,6 @@
       "id": 1,
       "cover": "https://i.ibb.co.com/G7twLVS/Virat-Kohli.jpg",
       "author": "Virat Kohli",
-      "author_img": "https://example.com/john_smith.jpg",
       "country": "India",
       "category": "Batsman",
       "rating": 4.5,
@@ -14,7 +13,6 @@
       "id": 2,
       "cover": "https://i.ibb.co.com/ysG8tkm/shakib-al-hasan.jpg",
       "author": "Sakib Al Hasan",
-      "author_img": "https://example.com/raj_malhotra.jpg",
       "country": "Bangladesh",
       "category": "All-Rounder",
       "rating": 4,
@@ -25,7 +23,6 @@
       "id": 3,
       "cover": "https://i.ibb.co.com/wL1bHrq/Rohit-Sharma.jpg",
       "author": "Rohit Sharma",
-      "author_img": "https://i.ibb.co.com/wL1bHrq/Rohit-Sharma.jpg",
       "country": "India",
       "category": "Batsman",
       "rating": 4.6,
@@ -36,7 +33,6 @@
       "id": 4,
       "cover": "https://i.ibb.co.com/CVVyp9z/Babar-Azam.jpg",
       "author": "Babar Azam",
-      "author_img": "https://example.com/ahmed_khan.jpg",
       "country": "Pakistan",
       "category": "Batsman",
       "rating": 4.4,
@@ -47,7 +43,6 @@
       "id": 5,
       "cover": "https://i.ibb.co.com/zHwJ7kn/Steven-Smith.jpg",
       "author": "Steven Smith",
-      "author_img": "https://i.ibb.co.com/zHwJ7kn/Steven-Smith.jpg",
       "country": "Australia",
       "category": "Batsman",
       "rating": 4.8,
@@ -58,12 +53,31 @@
       "id": 6,
       "cover": "https://i.ibb.co.com/QkgLy1C/Mushfiqur-Rahim.jpg",
       "author": "Mushfiqur Rahim",
-      "author_img": "https://example.com/carlos_alvarez.jpg",
       "country": "Bangladesh",
       "category": "Wicketkeeper",
       "rating": 4.3,
       "handed_category": "Right-handed-Bat",
       "price": 20000
+    },
+    {
+      "id": 7,
+      "cover": "https://i.ibb.co.com/gtJ061b/gettyimages-1780354541-612x612.jpg",
+      "author": "Glenn Maxwell",
+      "country": "Australia",
+      "category": "All-Rounder",
+      "rating": 4.3,
+      "handed_category": "Left-handed-Bat",
+      "price": 350000
+    },
+    {
+      "id": 8,
+      "cover": "https://i.ibb.co.com/DtM99K5/Dhoni-2.jpg",
+      "author": "MS Dhoni",
+      "country": "India",
+      "category": "Wicketkeeper",
+      "rating": 4.6,
+      "handed_category": "Right-handed-Bat",
+      "price": 30000
     }
   ]
   
