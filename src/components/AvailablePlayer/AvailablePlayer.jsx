@@ -3,7 +3,7 @@ import { CiFlag1 } from "react-icons/ci";
 
 const AvailablePlayer = ({ player,  handleSelectedPlayers}) => {
     
-    const { cover, author, country, category, rating, handed_category, price } = player
+    const { cover, author, country, category, rating, handed_category, price, Bowling} = player
 
     return (
         <div className="border rounded-xl gap-4 m-4 p-4">
@@ -24,8 +24,8 @@ const AvailablePlayer = ({ player,  handleSelectedPlayers}) => {
             <p className="mt-3 text-md font-bold">Rating: {rating}</p>
 
             <div className="flex justify-between items-center">
-                <p className="mt-3 text-md font-bold">Handed: </p>
                 <p className="mt-3 text-[#898989] text-sm">{handed_category}</p>
+                <p className="mt-3 text-[#898989] text-sm">{Bowling}</p>
             </div>
 
             <div className="flex justify-between items-center">

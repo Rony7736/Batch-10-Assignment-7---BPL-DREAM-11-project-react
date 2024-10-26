@@ -24,6 +24,11 @@ function App() {
   const newPrice = (pr) => {
     const newPrice = price + pr
     setPrice(newPrice)
+    toast.success("Claim Free Credit add successfully",
+      {
+        position:"top-center"
+      }
+    )
   }
   
  
@@ -39,6 +44,11 @@ function App() {
       toast.error('Player limit is full')
       return;
     }
+    if(player.price > price ){
+      toast.error('Price is Not Available Please Claim Free Credit')
+      return;
+    }
+   
     
 
     // find loop of selectedPlayers
@@ -46,15 +56,20 @@ function App() {
 
     // condition 
     if (isExist) {
-      toast.error('Already Exist')
+      toast.error('Already Player is Exist')
     }
+    
     else {
       const newPlayers = [...selectedPlayers, player]
       setSelectedPlayers(newPlayers);
+      // setPrice(price > player.price ? price - player.price : alert('Not available Balance'));
       setPrice(price - player.price);
-      toast.success("Player Selected Successfully")
+      toast.success("Player Selected Successfully",
+        {
+          position:"top-center"
+        }
+      )
     }
-
   }
 
   const handleIsActiveState = (status) => {
