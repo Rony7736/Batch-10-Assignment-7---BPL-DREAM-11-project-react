@@ -78,6 +78,26 @@
       "rating": 4.6,
       "handed_category": "Right-handed-Bat",
       "price": 30000
+    },
+    {
+      "id": 9,
+      "cover": "https://i.ibb.co.com/0GVmbrp/Litton-Das.jpg",
+      "author": "Liton Das",
+      "country": "Bangladesh",
+      "category": "Batsman",
+      "rating": 4.6,
+      "handed_category": "Right-handed-Bat",
+      "price": 25000
+    },
+    {
+      "id": 10,
+      "cover": "https://i.ibb.co.com/B4MjyBm/Kane-Williamson.jpg",
+      "author": "Kane Williamson",
+      "country": "New Zealand",
+      "category": "Batsman",
+      "rating": 4.6,
+      "handed_category": "Right-handed-Bat",
+      "price": 40000
     }
   ]
   

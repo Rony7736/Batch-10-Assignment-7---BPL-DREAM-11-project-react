@@ -1,4 +1,6 @@
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import { useState } from 'react'
 import './App.css'
 import Available from './components/Available/Available'
@@ -20,12 +22,11 @@ function App() {
   // console.log(price);
 
   const newPrice = (pr) => {
-    console.log(pr);
-    
     const newPrice = price + pr
     setPrice(newPrice)
   }
   
+ 
 
   const handleDelete = (id) => {
     const remainingPlayers = selectedPlayers.filter((p) => p.id != id)
@@ -35,7 +36,7 @@ function App() {
   const handleSelectedPlayers = (player) => {
 
     if(selectedPlayers.length >= 6){
-      alert('player is full')
+      toast.error('Player limit is full')
       return;
     }
     
@@ -45,11 +46,13 @@ function App() {
 
     // condition 
     if (isExist) {
-      alert('Already Exist')
+      toast.error('Already Exist')
     }
     else {
       const newPlayers = [...selectedPlayers, player]
       setSelectedPlayers(newPlayers);
+      setPrice(price - player.price);
+      toast.success("Player Selected Successfully")
     }
 
   }
@@ -94,6 +97,7 @@ function App() {
         <Footer></Footer>
       </div>
 
+      <ToastContainer></ToastContainer>
     </div>
   )
 }
